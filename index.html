@@ -5,83 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hello! I'm Ez-zahraoui-fs</title>
   <style>
+    /* Retro terminal vibes */
     body {
       font-family: 'Courier New', Courier, monospace;
       max-width: 750px;
       margin: 40px auto;
+      padding: 25px 35px;
       line-height: 1.7;
       color: #39ff14;
-      background-color: #000;
+      background: #000;
       background-image:
-        linear-gradient(rgba(57, 255, 20, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(57, 255, 20, 0.05) 1px, transparent 1px);
+        linear-gradient(rgba(57,255,20,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(57,255,20,0.05) 1px, transparent 1px);
       background-size: 40px 40px;
-      padding: 25px 35px;
       user-select: none;
     }
+
     h1, h2 {
-      font-weight: 700;
+      font-weight: bold;
+      text-shadow: 0 0 6px #39ff14;
       border-bottom: 1px solid #39ff14;
       padding-bottom: 0.3em;
       margin-bottom: 0.6em;
-      text-shadow: 0 0 6px #39ff14;
     }
-    h1 {
-      font-size: 2.8em;
-      margin-bottom: 0.8em;
+    h1 { font-size: 2.8em; margin-bottom: 0.8em; }
+    h2 { font-size: 1.6em; margin-top: 2em; }
+
+    p { margin: 0.4em 0 1em; font-size: 1.1em; letter-spacing: 0.04em; }
+    strong { color: #00ff00; text-shadow: 0 0 4px #00ff00; }
+
+    ul, ol { margin: 0 0 1em 1.4em; }
+    a { color: #00ff00; font-weight: 600; text-decoration: none; transition: color 0.3s ease; }
+    a:hover { color: #39ff14; text-decoration: underline; }
+
+    code { 
+      display: block; 
+      background: #111; 
+      color: #39ff14; 
+      padding: 6px; 
+      margin: 0.5em 0; 
+      border-radius: 4px; 
+      font-size: 0.95em;
     }
-    h2 {
-      font-size: 1.6em;
-      margin-top: 2em;
-    }
-    strong {
-      font-weight: 700;
+    pre { background: #111; padding: 10px; border-radius: 6px; overflow-x: auto; }
+
+    .final-message {
+      text-align: center;
+      margin: 2em 0;
+      font-size: 1.1em;
       color: #00ff00;
       text-shadow: 0 0 4px #00ff00;
     }
-    ul, ol {
-      margin-left: 1.4em;
-      margin-bottom: 1em;
-    }
-    a {
-      color: #00ff00;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-    a:hover {
-      color: #39ff14;
-      text-decoration: underline;
-    }
-    p {
-      margin-top: 0.4em;
-      margin-bottom: 1em;
-      font-size: 1.1em;
-      letter-spacing: 0.04em;
-    }
-    code {
-      background-color: #111;
-      padding: 2px 6px;
-      border-radius: 4px;
-      color: #39ff14;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 0.95em;
-    }
-    hr {
-      border: none;
-      border-top: 1px solid #39ff14;
-      margin: 3em 0;
-      opacity: 0.25;
-    }
+    hr { border: none; border-top: 1px solid #39ff14; opacity: 0.25; margin: 3em 0; }
     .footer {
-      margin-top: 4em;
+      text-align: center;
       font-size: 1.2em;
       font-weight: 600;
-      text-align: center;
-      color: #39ff14;
-      text-shadow: 0 0 6px #39ff14;
+      margin-top: 4em;
       letter-spacing: 0.15em;
-      user-select: text;
+      text-shadow: 0 0 6px #39ff14;
     }
   </style>
 </head>
@@ -89,78 +71,55 @@
 
   <h1>👋 Hey there! I’m Ez-zahraoui-fs</h1>
 
-  <h2>💻 A Little About Me</h2>
-  <p>I'm a student with a strong passion for <strong>Cybersecurity</strong> and <strong>Networking</strong>.<br>
-  I love exploring and experimenting with tools, especially on <strong>Linux</strong> systems like <strong>Ubuntu</strong>.<br>
-  Every day, I’m working hard to sharpen my defensive security skills, always focusing on legal and ethical methods.<br>
-  My dream is to become a cybersecurity expert who helps others protect their data safely.</p>
+  <h2>💻 About Me</h2>
+  <p>
+    I’m a cybersecurity student who loves diving into <strong>defensive security</strong> and <strong>network fundamentals</strong>.<br>
+    When I’m not tinkering on <strong>Linux (Ubuntu)</strong>, I’m experimenting with new tools and sharpening my skills—all in a totally ethical, legal way.
+  </p>
 
-  <h2>🛠 Skills &amp; Tools I Use</h2>
+  <h2>🛠 What I Use</h2>
   <ul>
     <li>Defensive Cybersecurity</li>
-    <li>Basic Networking</li>
-    <li>Linux / Ubuntu Systems</li>
-    <li>Virtualization Tools (basic level)</li>
-    <li>Bash Scripting (beginner)</li>
-    <li>Git &amp; GitHub Version Control</li>
+    <li>Network Basics</li>
+    <li>Linux / Ubuntu</li>
+    <li>Virtualization (Intro)</li>
+    <li>Bash Scripting (Beginner)</li>
+    <li>Git &amp; GitHub</li>
   </ul>
 
-  <h2>📚 What I'm Currently Learning</h2>
-  <p>Right now, I’m diving deep into <strong>Defensive Security techniques</strong> — learning how to harden networks and systems.<br>
-  I’m also improving my <strong>Linux administration</strong> skills and learning the basics of <strong>ethical hacking</strong> to understand security better, the right way.</p>
+  <h2>📚 Current Focus</h2>
+  <p>
+    Right now, I’m all about <strong>hardening systems</strong>, mastering <strong>Linux admin</strong>,
+    and playing around with <strong>ethical hacking basics</strong>—just to really get how security works from the inside out.
+  </p>
 
-  <h2>📫 Want to Connect?</h2>
+  <h2>📫 Let’s Connect</h2>
   <ul>
-    <li>📧 Email me at: <a href="mailto:salaheddineezzahraoui04@gmail.com">salaheddineezzahraoui04@gmail.com</a></li>
-    <li>💼 Check out my GitHub: <a href="https://github.com/EZ-ZAHRAOUI-FS" target="_blank" rel="noopener noreferrer">EZ-ZAHRAOUI-FS</a></li>
+    <li>✉️ <a href="mailto:salaheddineezzahraoui04@gmail.com">Email me</a></li>
+    <li>💼 <a href="https://github.com/EZ-ZAHRAOUI-FS" target="_blank" rel="noopener noreferrer">My GitHub</a></li>
   </ul>
 
-  <h2>💡 How to Install Python (Simple Steps)</h2>
+  <h2>💡 Spin Up a Local Server</h2>
+  <p>Got your HTML files ready? Run this in your terminal to serve any folder on <code>http://localhost:9111</code>:</p>
+
+  <pre><code>python3 -m http.server 9111</code></pre>
+
   <ol>
-    <li><strong>Go to the official site:</strong><br>
-      Visit: <a href="https://www.python.org/downloads/" target="_blank">python.org/downloads</a>
-    </li>
-    <li><strong>Choose your system:</strong><br>
-      Download:
-      <ul>
-        <li>Windows (.exe installer)</li>
-        <li>macOS (.pkg installer)</li>
-        <li>Linux (check your distro’s package manager)</li>
-      </ul>
-    </li>
-    <li><strong>On Windows:</strong> Run the installer, make sure to check <strong>“Add Python to PATH”</strong>, then install.</li>
-    <li><strong>On macOS:</strong> Open the .pkg and follow the install prompts.</li>
-    <li><strong>On Linux:</strong> Python is often pre-installed. To check, run:
-      <br><code>python3 --version</code>
-      <br>If needed, install with:
-      <br><code>sudo apt install python3</code> (on Ubuntu/Debian)
-    </li>
-    <li><strong>Check installation:</strong><br>
-      In terminal or CMD, run:
-      <br><code>python3 --version</code>
-      <br>You should see the version number pop up!
-    </li>
+    <li>Open terminal or CMD/PowerShell.</li>
+    <li>cd into your project folder:</li>
+      <code>cd /path/to/your/folder</code>
+    <li>Type <code>python3 -m http.server 9111</code> and hit Enter.</li>
+    <li>In your browser, head to <code>http://localhost:9111</code>.</li>
+    <li>🎉 Boom—you’re live locally!</li>
   </ol>
 
-  <h2>💡 How to Start a Local Server</h2>
-  <ol>
-    <li><strong>Open your terminal or CMD.</strong></li>
-    <li><strong>Go to your project folder:</strong><br>
-      <code>cd /path/to/your/folder</code>
-    </li>
-    <li><strong>Run the Python server:</strong><br>
-      <code>python3 -m http.server 9111</code>
-    </li>
-    <li><strong>Open your browser and visit:</strong><br>
-      <code>http://localhost:9111</code>
-    </li>
-    <li><strong>That’s it!</strong> 🎉 You’re now hosting files locally on your machine.
-    </li>
-  </ol>
+  <div class="final-message">
+    🔗 Check out my <a href="https://github.com/EZ-ZAHRAOUI-FS" target="_blank" rel="noopener noreferrer">GitHub</a> for the full source,
+    fresh tips, and my latest projects. Thanks for stopping by! 🙏
+  </div>
 
   <hr>
-
-  <div class="footer">EZ-ZAHRAOUI-FS — Written by me, for you.</div>
+  <div class="footer">EZ-ZAHRAOUI-FS — made by me, for you.</div>
 
 </body>
 </html>
