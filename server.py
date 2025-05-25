@@ -11,5 +11,5 @@ class MyHandler(SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     with TCPServer(("", PORT), MyHandler) as httpd:
         print(f"Server started at http://localhost:{PORT}")
-        print("you are so SMART ID12")
+        print("you are SMART JUST TRUST ALLAH AND YHINK")
         httpd.serve_forever()
